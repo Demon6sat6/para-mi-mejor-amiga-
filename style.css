@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+    background: white;
+    width: 85%;
+    max-width: 380px;
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.emoji-container {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    animation: bounce 2s infinite;
+}
+
+h1 { color: #ff85a1; margin-bottom: 1rem; }
+
+.mensaje-container {
+    min-height: 80px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensaje {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+button {
+    background: #ff85a1;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+button:active { transform: scale(0.98); }
+
+.counter {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
